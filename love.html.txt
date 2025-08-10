@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Do You Love Me?</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: pink;
+        padding-top: 100px;
+    }
+    h1 {
+        font-size: 3em;
+        color: red;
+    }
+    button {
+        font-size: 1.5em;
+        padding: 10px 30px;
+        margin: 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .yes {
+        background-color: lightgreen;
+    }
+    .no {
+        background-color: lightcoral;
+    }
+</style>
+</head>
+<body>
+    <h1>Do you love me?</h1>
+    <button class="yes" onclick="yesAnswer()">Yes</button>
+    <button class="no" onclick="noAnswer()">No</button>
+
+<script>
+function yesAnswer() {
+    document.body.innerHTML = "<h1 style='color:red;'>Yayyy I love you too ❤️</h1>";
+}
+
+function noAnswer() {
+    alert("Wrong answer 😏 Try again!");
+}
+</script>
+</body>
+</html>
